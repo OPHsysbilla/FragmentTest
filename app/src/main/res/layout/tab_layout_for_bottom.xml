@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    tools:showIn="@layout/fragment_text_tab">
+
+    <TextView
+        android:id="@+id/tv_home"
+        style="@style/viewpager_navigation_bar_tab_style"
+        android:drawableTop="@drawable/ic_home_grey_500_24dp"
+        android:text="@string/item_home"/>
+
+    <TextView
+        android:id="@+id/tv_location"
+        style="@style/viewpager_navigation_bar_tab_style"
+        android:drawableTop="@drawable/ic_near_me_grey_500_24dp"
+        android:text="@string/item_location"/>
+
+    <RelativeLayout
+
+        android:layout_width="55dp"
+
+        android:layout_height="match_parent"
+        android:padding="2dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/tv_camera"
+            android:layout_centerInParent="true"
+            android:textSize="10sp"
+            android:textColor="@color/color4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@mipmap/pick_ic_camera"
+            android:tint="@color/color4"
+
+            android:background="@drawable/shape_circle"
+            android:scaleType="centerInside"
+             />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_like"
+        style="@style/viewpager_navigation_bar_tab_style"
+        android:drawableTop="@drawable/ic_shopping_basket_grey_500_24dp"
+        android:text="@string/item_like"/>
+
+    <TextView
+        android:id="@+id/tv_person"
+        style="@style/viewpager_navigation_bar_tab_style"
+        android:drawableTop="@drawable/ic_account_circle_grey_500_24dp"
+        android:text="@string/item_person"/>
+</LinearLayout>

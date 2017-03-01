@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--<TextView-->
+        <!--android:transitionName="cloth_details_title"-->
+        <!--android:id="@+id/cloth_details_textTitle"-->
+        <!--android:layout_margin="12dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="厉害的标题能有这么长厉害的标题能有这么长厉害的标题能有这么长"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textSize="24sp"-->
+        <!--android:shadowColor="#44000000"-->
+        <!--android:shadowDx="0"-->
+        <!--android:shadowDy="0"-->
+        <!--android:shadowRadius="4"-->
+        <!--/>-->
+</LinearLayout>

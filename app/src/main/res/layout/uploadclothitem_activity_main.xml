@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_grey_50">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/uploadclothitem_tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+            <ImageView
+                android:id="@+id/uploadclothitem_image"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/header"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                />
+
+            <shu.fragmenttest.UI.Flow.TagFlowLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/uploadclothitem_flowlayout"
+                app:max_select="-1"
+                android:padding="0dp">
+            </shu.fragmenttest.UI.Flow.TagFlowLayout>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入标题"
+            android:background="@drawable/shape_edittext_first"
+            android:paddingTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            android:textAlignment="center"
+            android:id="@+id/uploadclothitem_title"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入描述"
+            android:maxLines="4"
+            android:background="@drawable/shape_edittext_last"
+            android:paddingTop="10dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/uploadclothitem_description"/>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/uploadclothitem_photo_rv_list"
+                android:background="@drawable/shape_edittext_last"
+                android:visibility="gone"
+                >
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color1"
+                android:id="@+id/uploadclothitem_hint"
+                android:textAlignment="center"
+                /></LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="确认"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_button_green_left_corners"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/uploadclothitem_submit"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="购物分析"
+            android:background="@drawable/shape_button_right_corner_red"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/uploadclothitem_suggestion"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

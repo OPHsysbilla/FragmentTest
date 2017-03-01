@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">掌上衣柜</string>
+    <string name="drawer_layout_open">Open</string>
+    <string name="drawer_layout_close">Close</string>
+    <string name="user_title">blabla</string>
+    <string name="user_name">昵称</string>
+    <string name="tips">Hello</string>
+    <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect" format="boolean"></attr>
+        <attr name="max_select" format="integer"></attr>
+        <attr name="gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <string name="item_home">首页</string>
+    <string name="item_location">灵感</string>
+    <string name="item_like">衣橱</string>
+    <string name="item_person">个人</string>
+</resources>
